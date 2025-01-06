@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="css/cart.css">
+     <!-- font awesome cdn link  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<div class="top-bar">
+    <div class="container">
+      <div class="contact-info">
+        <span><i class="fas fa-phone-alt"></i>+91 8247547854</span>
+        <span><i class="fas fa-envelope"></i> Advoize2023@gmail.com</span>
+      </div>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/advoize19"> <i class="fab fa-facebook-f"></i> </a>
+        <a href="https://www.facebook.com/advoize19"> <i class="fab fa-twitter"></i> </a>
+        <a href="https://www.youtube.com/channel/UCKfJKfAaNX9cN5qqk_L2uDw"> <i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/advoize19/"> <i class="fab fa-instagram"></i>  </a>
+        <a href="https://www.facebook.com/advoize19"> <i class="fab fa-linkedin"></i>  </a>
+        <a href="https://www.facebook.com/advoize19"> <i class="fab fa-pinterest"></i> </a>
+      </div>
+    </div>
+  </div>
+<header class="header">
+
+    <a href="home.html" class="logo"> <i class=""></i> </a>
+
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html"><b>Home</b></a></li>
+            <li><a href="shop.html"><b>shop</b></a></li>
+            <li><a href="about.html"><b>about</b></a></li>
+            <li>
+               <a href="Organic-Products.html"><b>| Organic-Products</b> </a>
+               <ul class="dropdown">
+                   <li><a href="#FruitsVeggies"><b>Root vegetables</b></a></li>
+                   <li><a href="#CerealsPulses"><b>Leaf Vegetables</b></a></li>
+                   <li><a href="#AttaReadyMix"><b>Seed vegetables</b></a></li>
+                   <li><a href="#ColdPressedOils"><b>Pod vegetables</b></a></li>
+                   <li><a href="#DairyBakeryPoultry"><b>Flower vegetables</b></a></li>
+                   <li><a href="#SpicesDryFruits"><b>Fungi mushrooms</b></a></li>
+               </ul>
+           </li>
+           <li><a href="review.html"><b>review</b></a></li>
+           <li><a href="contact.html"><b>contact</b></a></li>
+           <!-- <li><a href="cart.html">card List</a></li> -->
+           
+           </ul>
+     </nav>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+       <a href="cart.html"> 
+        <div id="cart-btn" class="fas fa-shopping-cart">
+        
+            
+    </div></a>
+        <div id="login-btn" class="fas fa-user"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+   
+
+    <form action="" class="login-form">
+        <form action="https://api.web3forms.com/submit" method="POST" class="login-form">
+            <input type="hidden" name="access_key" value="076f4d9c-1d0f-4334-91d0-4f7b566bb825">
+            <button type="button" class="close-btn" onclick="this.parentElement.style.display='none'">&times;</button>
+           <h3>login form</h3>
+            <input type="email" name="email" placeholder="enter your email" class="box" required>
+            <input type="password" name="password" placeholder="enter your password" class="box" required>
+            <div class="remember">
+                <input type="checkbox" name="remember-me" id="remember-me">
+                <label for="remember-me">remember me</label>
+            </div>
+            <input type="submit" value="login now" class="btn">
+        </form>
+        </form>
+    
+
+</header>
+
+<!-- header section ends -->
+ <br><br><br><br><br><br><br>
+
+ <section class="cart">
+    <h1>Your Cart</h1>
+    <div id="cart-items"></div>
+    <div id="cart-total">
+        <h3>Total: <span id="total-price">$0.00</span></h3>
+    </div>
+</section>
+<div id="cart-notification" class="cart-notification" style="display: none;"></div>
+
+<script>
+const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+// Display cart items
+function displayCart() {
+    const cartItemsContainer = document.getElementById('cart-items');
+    const totalPriceElement = document.getElementById('total-price');
+    let total = 0;
+
+    if (cart.length === 0) {
+        cartItemsContainer.innerHTML = '<p>Your cart is empty!</p>';
+        totalPriceElement.textContent = '₹0.00';
+        return;
+    }
+
+    cartItemsContainer.innerHTML = cart.map((item, index) => {
+        const name = item.name || 'Unnamed Product';
+        const price = item.price || 0;
+        const quantity = item.quantity || 1;
+        const imageUrl = item.image || 'default-image.jpg';
+        const itemTotal = price * quantity;
+        total += itemTotal;
+
+        return `
+            <div class="cart-item">
+                <img src="${imageUrl}" alt="${name}" class="cart-item-image">
+                <div class="cart-item-details">
+                    <h3>${name}</h3>
+                    <p class="cart-item-price">Price: ₹${price.toFixed(2)}</p>
+                    <div class="quantity-controls">
+                        <button class="decrement-btn" onclick="updateQuantity(${index}, 'decrement')">-</button>
+                        <span id="quantity-${index}">${quantity}</span>
+                        <button class="increment-btn" onclick="updateQuantity(${index}, 'increment')">+</button>
+                    </div>
+                    <button class="delete-btn" onclick="deleteItem(${index})">Remove</button>
+                </div>
+                <div class="item-total">Item Total: ₹${itemTotal.toFixed(2)}</div>
+            </div>
+        `;
+    }).join('');
+
+    totalPriceElement.textContent = `₹${total.toFixed(2)}`;
+}
+
+// Update quantity
+function updateQuantity(index, action) {
+    const currentQuantity = cart[index].quantity || 1;
+
+    if (action === 'increment') {
+        cart[index].quantity = currentQuantity + 1;
+    } else if (action === 'decrement' && currentQuantity > 1) {
+        cart[index].quantity = currentQuantity - 1;
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+    displayCart();
+}
+
+// Delete item
+function deleteItem(index) {
+    cart.splice(index, 1);
+    localStorage.setItem('cart', JSON.stringify(cart));
+    displayCart();
+}
+
+// Display cart on load
+window.onload = displayCart;
+
+</script>
+
+
+   
+    </body>
+    </html>
+    

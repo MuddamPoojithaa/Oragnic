@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop</title>
+
+   
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    
+        </form>
+        <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container">
+          <div class="contact-info">
+            <span><i class="fas fa-phone-alt"></i>+91 8247547854</span>
+            <span><i class="fas fa-envelope"></i> Advoize2023@gmail.com</span>
+          </div>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/advoize19"> <i class="fab fa-facebook-f"></i> </a>
+            <a href="https://www.facebook.com/advoize19"> <i class="fab fa-twitter"></i> </a>
+            <a href="https://www.youtube.com/channel/UCKfJKfAaNX9cN5qqk_L2uDw"> <i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/advoize19/"> <i class="fab fa-instagram"></i>  </a>
+            <a href="https://www.facebook.com/advoize19"> <i class="fab fa-linkedin"></i>  </a>
+            <a href="https://www.facebook.com/advoize19"> <i class="fab fa-pinterest"></i> </a>
+          </div>
+        </div>
+      </div>
+      
+<header class="header">
+
+    <a href="home.html" class="logo"> <i class=""></i> </a>
+
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html"><b>Home</b></a></li>
+            <li><a href="shop.html"><b>shop</b></a></li>
+            <li><a href="about.html"><b>about</b></a></li>
+            <li>
+               <a href="Organic-Products.html"><b>| Organic-Products</b> </a>
+               <ul class="dropdown">
+                   <li><a href="#FruitsVeggies"><b>Root vegetables</b></a></li>
+                   <li><a href="#CerealsPulses"><b>Leaf Vegetables</b></a></li>
+                   <li><a href="#AttaReadyMix"><b>Seed vegetables</b></a></li>
+                   <li><a href="#ColdPressedOils"><b>Pod vegetables</b></a></li>
+                   <li><a href="#DairyBakeryPoultry"><b>Flower vegetables</b></a></li>
+                   <li><a href="#SpicesDryFruits"><b>Fungi mushrooms</b></a></li>
+               </ul>
+           </li>
+           <li><a href="review.html"><b>review</b></a></li>
+           <li><a href="contact.html"><b>contact</b></a></li>
+           <!-- <li><a href="cart.html">card List</a></li> -->
+           
+           </ul>
+     </nav>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+       <a href="cart.html"> 
+        <div id="cart-btn" class="fas fa-shopping-cart">
+        <span class="cart-count">0</span>
+    </div></a>
+    
+        <div id="login-btn" class="fas fa-user"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+   
+
+    <form action="" class="login-form">
+        <form action="https://api.web3forms.com/submit" method="POST" class="login-form">
+            <input type="hidden" name="access_key" value="076f4d9c-1d0f-4334-91d0-4f7b566bb825">
+            <button type="button" class="close-btn" onclick="this.parentElement.style.display='none'">&times;</button>
+           <h3>login form</h3>
+            <input type="email" name="email" placeholder="enter your email" class="box" required>
+            <input type="password" name="password" placeholder="enter your password" class="box" required>
+            <div class="remember">
+                <input type="checkbox" name="remember-me" id="remember-me">
+                <label for="remember-me">remember me</label>
+            </div>
+            <input type="submit" value="login now" class="btn">
+        </form>
+        </form>
+    
+
+</header>
+
+
+
+
+<div class="heading">
+    <h1>our shop</h1>
+    <b><p><a href="home.html"></a></p></b>
+</div>
+
+<section class="projects">
+
+    <h1 class="title">Our <span>Category</span></h1>
+
+    <div class="filter-links">
+        <a href="#all" class="filter-btn active" data-filter="all">All</a>
+        <a href="#fresh fruits" class="filter-btn" data-filter="fresh-fruits">Root vegetables</a>
+        <a href="#vegetables" class="filter-btn" data-filter="vegetables"> Leafy Vegetables</a>
+        <a href="#organic spices" class="filter-btn" data-filter="organic-spices">Seed vegetables</a>
+        <a href="#Dry-fruits" class="filter-btn" data-filter="Dry-fruits">Pod vegetables</a>
+        <a href="#Dal" class="filter-btn" data-filter="Dal">Flower vegetables</a>
+    </div>
+
+    <div class="box-container" id="all">
+     
+        
+        <div class="box fresh-fruits">
+            
+            <img src="image/fruit 1.jpg" alt="Fresh Fruits">
+        
+            <h3>Fresh Carrots</h3>
+            <h1>10K+ bought in past month</h1>
+            <h3><span class="highlight-price">₹26</span> (₹5.20/100 g) M.R.P: ₹39 (33% off)</h3>
+            <h1><span class="highlight-price">Fresh</span> FREE delivery starting from Today 12 pm - 2 pm on orders over ₹499</h1>
+                          <div class="buttons">
+                    <button class="btn add-to-cart" onclick="addToCart('Fresh Carrots',26, 'image/fruit 1.jpg')">
+                        <i class="fas fa-cart-plus"></i>
+                    </button>
+
+                    <button class="btn like-btn" onclick="toggleLike(this)">
+                        <i class="fas fa-heart"></i> 
+                      </button>
+                    
+                      
+                  </div>
+        </div>
+      
+          
+        <div class="box fresh-fruits">
+            <img src="image/fruits 2.jpg" alt="Fresh Fruits">
+        
+
+            <h3>Fresh Radishs</h3>
+            <h1>10K+ bought in past month</h1>
+            <h3><span class="highlight-price">₹72</span> (₹72/count) M.R.P: ₹108 (33% off)</h3>
+            <h1><span class="highlight-price">Fresh</span> FREE delivery starting from Today 12 pm - 2 pm on orders over ₹499</h1>
+        <div class="buttons">
+                    <button class="btn add-to-cart" onclick="addToCart('Fresh Radishs', 72, 'image/fruits 2.jpg')">
+                        <i class="fas fa-cart-plus"></i>
+                    </button>
+
+                    <button class="btn like-btn" onclick="toggleLike(this)">
+                        <i class="fas fa-heart"></i> 
+                      </button>
+                    
+                      
+                  </div>
+                
+                
+            
+        </div>
+        <div class="box fresh-fruits">
+            <img src="image/fruit 3.jpg" alt="Fresh Fruits">
+        
+            <h3>Fresh Potatos </h3>
+<h1>5K+ bought in past month</h1>
+<h3><span class="highlight-price">₹116</span> (₹116/count) M.R.P: ₹174 (33% off)</h3>
+<h1><span class="highlight-price">Fresh</span> FREE delivery starting from Today 12 pm - 2 pm on orders over ₹499</h1>
+<div class="buttons">
+    <button class="btn add-to-cart" onclick="addToCart('Fresh Potatos', 116 , 'image/fruit 3.jpg')">
+        <i class="fas fa-cart-plus"></i>
+    </button>
+
+    <button class="btn like-btn" onclick="toggleLike(this)">
+        <i class="fas fa-heart"></i> 
+      </button>
+    
+      
+  </div>
+                
+            
+        </div>
+        <div class="box fresh-fruits">
+            <img src="image/fruits 4.jpg" alt="Fresh Fruits">
+        
+           <h3>Fresh Gingers</h3>
+           <h1>10K+ bought in past month</h1>
+           <h3><span class="highlight-price">₹184</span>(₹46/count) M.R.P: ₹244 (25% off)</h3>
+<h1><span class="highlight-price">Fresh</span> FREE delivery starting from Today 2 pm - 4 pm on orders over ₹499</h1>
+            <div class="buttons">
+                <button class="btn add-to-cart" onclick="addToCart('Fresh Gingers',184, 'image/fruits 4.jpg')">
+                    <i class="fas fa-cart-plus"></i>
+                </button>
+            
+                <button class="btn like-btn" onclick="toggleLike(this)">
+                    <i class="fas fa-heart"></i> 
+                  </button>
+                
+                  
+              </div>
+                            
+            
+        </div>
+        <div class="box fresh-fruits">
+            <img src="image/vegtables 2.jpg" alt="Fresh Fruits">
+        
+            <h3>Fresh onions</h3>
+            <h1>10K+ bought in past month</h1>
+            <h3><span class="highlight-price">₹192</span> (₹48/count) M.R.P: ₹248 (23% off)</h3>
+            <h1><span class="highlight-price">Fresh</span> FREE delivery starting from Today 2 pm - 4 pm on orders over ₹499</h1>
+            <div class="buttons">
+                <button class="btn add-to-cart" onclick="addToCart('Fresh onions', 192 , 'image/vegtables 2.jpg')">
+                    <i class="fas fa-cart-plus"></i>
+                </button>
+            
+                <button class="btn like-btn" onclick="toggleLike(this)">
+                    <i class="fas fa-heart"></i> 
+                  </button>
+                
+                  
+              </div>
+                      
+        </div>
+        <div class="box fresh-fruits">
+            <img src="image/fruits 6.jpg" alt="Fresh Fruits">
+        
+            <h3>Fresh Garlic</h3>
+          <h1>30K+ bought in past month</h1>
+          <h3><span class="highlight-price">₹229</span>(₹22,900/100 g) M.R.P: ₹399 (43% off)</h3>
+          <h1><span class="highlight-price">Fresh</span> Currently unavailable.</h1>
+<div class="buttons">
+    <button class="btn add-to-cart" onclick="addToCart('Fresh Garlic',229, 'image/fruits 6.jpg')">
+        <i class="fas fa-cart-plus"></i>
+    </button>
+
+    <button class="btn like-btn" onclick="toggleLike(this)">
+        <i class="fas fa-heart"></i> 
+      </button>
+    
+      
+  </div>
+        </div>
+        <div class="box fresh-fruits">
+            <img src="image/fruits 7.jpg" alt="Fresh Fruits">
+        
+            <h3>Celery root</h3>
+           <h1>50+ bought in past month</h1>
+           <h3><span class="highlight-price">₹149</span> M.R.P: ₹399 (63% off)</h3>
+          <h1><span class="highlight-price">Fresh</span> Get it by Thursday 21 November</h1>
+           <h1>Only 2 left in stock.</h1>
+           <div class="buttons">
+            <button class="btn add-to-cart" onclick="addToCart('Celery root',149, 'image/fruits 7.jpg')">
+                <i class="fas fa-cart-plus"></i>
+            </button>
+        
+            <button class="btn like-btn" onclick="toggleLike(this)">
+                <i class="fas fa-heart"></i> 
+              </button>
+            
+        </div>
+        </div>
+        <div class="box fresh-fruits">
+            <img src="image/sweet.jpg" alt="Fresh Fruits">
+        
+            <h3>Sweeet Potatos</h3>
+            <h1>40K+ bought in past month</h1>
+            <h3><span class="highlight-price">₹57 </span> (₹5.70/100 g) M.R.P: ₹79 (28% off)</h3>
+            <h1><span class="highlight-price">Fresh</span> FREE delivery starting from Today 6 pm - 8 pm on orders over ₹499</h1>
+            <div class="buttons">
+                <button class="btn add-to-cart" onclick="addToCart('Sweeet Potatos ',57, 'image/sweet.jpg')">
+                    <i class="fas fa-cart-plus"></i>
+                </button>
+            
+                <button class="btn like-btn" onclick="toggleLike(this)">
+                    <i class="fas fa-heart"></i> 
+                  </button>
+                  </div>
+        </div>
+
+        <div class="box vegetables">
+            <img src="image/vegtable 1.jpg" alt="Vegetables">
+            <h3>Spinach</h3>
+            <h1>70K+ bought in past month</h1>
+            <h3><span class="highlight-price">₹37 </span> (₹3.70/100 g) M.R.P: ₹56 (34% off)</h3>
+            <h1><span class="highlight-price">Fresh</span> FREE delivery starting from Today 6 pm - 8 pm on orders over ₹499</h1>
+            <div class="buttons">
+                <button class="btn add-to-cart" onclick="addToCart('Spinach',37, 'image/vegtable 1.jpg')">
+                    <i class="fas fa-cart-plus"></i>
+                </button>
+            
+                <button class="btn like-btn" onclick="toggleLike(this)">
+                    <i class="fas fa-heart"></i> 
+                  </button>
+                  </div>
+        </div>
+        <div class="box vegetables">
+            <img src="image/vegtables 8.jpg" alt="Vegetables">
+            <h3>Mint</h3>
+           <h1>1L+ bought in past month</h1>
+           <h3><span class="highlight-price">₹40 </span>(₹7/100 g) M.R.P: ₹105 (33% off)</h3>
+           <h1><span class="highlight-price">Fresh</span> FREE delivery starting from Today 12 pm - 2 pm on orders over ₹499</h1>
+            <div class="buttons">
+                <button class="btn add-to-cart" onclick="addToCart('Mint',40, 'image/vegtables 8.jpg')">
+                    <i class="fas fa-cart-plus"></i>
+                </button>
+            
+                <button class="btn like-btn" onclick="toggleLike(this)">
+                    <i class="fas fa-heart"></i> 
+                  </button>
+                  </div>
+            
+        </div>
+        <div class="box vegetables">
+            <img src="image/vegtables 3.jpg" alt="Vegetables">
+            <h3>Coriander</h3>
+            <h1>1L+ bought in past month</h1>
+            <h3><span class="highlight-price">₹50 </span>(₹5/100 g) M.R.P: ₹75 (33% off)</h3>
+            <h1><span class="highlight-price">Fresh</span> FREE delivery starting from Tomorrow 6 am - 8 am on orders over ₹499</h1>
+            <div class="buttons">
+                <button class="btn add-to-cart" onclick="addToCart('Coriander',50, 'image/vegtables 3.jpg')">
+                    <i class="fas fa-cart-plus"></i>
+                </button>
+            
+                <button class="btn like-btn" onclick="toggleLike(this)">
+                    <i class="fas fa-heart"></i> 
+                  </button>
+                  </div>
+            
+            
+        </div>
+        <div class="box vegetables">
+            <img src="image/vegtables 4.jpg" alt="Vegetables">
+            <h3>Broccoli</h3>
+            <h1>10K+ bought in past month</h1>
+            <h3><span class="highlight-price">₹7</span>(₹7/100 g) M.R.P: ₹11 (36% off)</h3>
+            <h1><span class="highlight-price">Fresh</span>  FREE delivery starting from Tomorrow 6 am - 8 am on orders over ₹499</h1>
+            <div class="buttons">
+                <button class="btn add-to-cart" onclick="addToCart('Broccoli',7, 'image/vegtables 4.jpg')">
+                    <i class="fas fa-cart-plus"></i>
+                </button>
+            
+                <button class="btn like-btn" onclick="toggleLike(this)">
+                    <i class="fas fa-heart"></i> 
+                  </button>
+                  </div>
+            
+            
+        </div>
+        <div class="box vegetables">
+            <img src="image/vegtables 5.jpg" alt="Vegetables">
+            <h3>Beet greens</h3>
+           <h1>800+ bought in past month</h1>
+           <h3><span class="highlight-price">₹24</span>(₹4.80/100 g) M.R.P: ₹32 (25% off)</h3>
+           <h1><span class="highlight-price">Fresh</span> FREE delivery starting from Today 3 pm - 7 pm on orders over ₹499</h1>
+           <div class="buttons">
+            <button class="btn add-to-cart" onclick="addToCart('Beet greens',24, 'image/vegtables 5.jpg')">
+                <i class="fas fa-cart-plus"></i>
+            </button>
+        
+            <button class="btn like-btn" onclick="toggleLike(this)">
+                <i class="fas fa-heart"></i> 
+              </button>
+              </div>
+        
+           
+        </div>
+        <div class="box vegetables">
+            <img src="image/vegtables 6.jpg" alt="Vegetables">
+            <h3>Bok choy</h3>
+<h1>7K+ bought in past month</h1>
+<h3><span class="highlight-price">₹29</span>(₹11.60/100 g) M.R.P: ₹46 (37% off)</h3>
+<h1><span class="highlight-price">Fresh</span> FREE delivery starting from Today 3 pm - 7 pm on orders over ₹499</h3>
+    <h3>FREE Delivery by Organic</h3>
+    <div class="buttons">
+        <button class="btn add-to-cart" onclick="addToCart('Bok choy',29, 'image/vegtables 6.jpg')">
+            <i class="fas fa-cart-plus"></i>
+        </button>
+    
+        <button class="btn like-btn" onclick="toggleLike(this)">
+            <i class="fas fa-heart"></i> 
+          </button>
+          </div>
+    
+        </div>
+        <div class="box vegetables">
+            <img src="image/cabbes.jpg" alt="Vegetables">
+            <h3>Cabbages</h3>
+            <h1>30K+ bought in past month</h1>
+            <h3><span class="highlight-price">₹70 </span>(₹1.40/count)</h3>
+            <h1><span class="highlight-price">₹80 </span>shipping</h1>
+           <h1>Get it Thursday 28 November - Saturday 30 November</h1>
+           <div class="buttons">
+            <button class="btn add-to-cart" onclick="addToCart('Cabbage SeedsPack ',70, 'image/vegtables 8.jpg')">
+                <i class="fas fa-cart-plus"></i>
+            </button>
+        
+            <button class="btn like-btn" onclick="toggleLike(this)">
+                <i class="fas fa-heart"></i> 
+              </button>
+              </div>
+            
+        </div>
+        <div class="box vegetables">
+            <img src="image/vegtables 9.jpg" alt="Vegetables">
+            <h3>Chives</h3>
+            <h1>40K+ bought in past month</h1>
+            <h3><span class="highlight-price">₹54 </span>(₹10.80/100 g) M.R.P: ₹123 (56% off)</h3>
+            <h1>Save 1% with coupon</h1>
+            <h3>Get it by Today, 19 November</h3>
+            <h1><span class="highlight-price">Fresh </span> FREE Delivery by Organic</h1>
+            <div class="buttons">
+                <button class="btn add-to-cart" onclick="addToCart('Chives ',54, 'image/vegtables 9.jpg')">
+                    <i class="fas fa-cart-plus"></i>
+                </button>
+            
+                <button class="btn like-btn" onclick="toggleLike(this)">
+                    <i class="fas fa-heart"></i> 
+                  </button>
+                  </div>
+        </div>
+        
+        
+        
+
+        <div class="box organic-spices">
+            <img src="image/species 1.jpg" alt="Organic Spices">
+            <h3>Tomato</h3>
+            <h1>Limited time deal</h1>
+            <h3><span class="highlight-price">₹473 </span>(₹135.14/100 g) M.R.P: ₹699 (32% off)</h3>
+            <h1>Save 1% with coupon</h1>
+            <h3>Get it by Today, 19 November</h3>
+            <h1><span class="highlight-price">Fresh </span> FREE Delivery by Organic</h1>
+            <div class="buttons">
+                <button class="btn add-to-cart" onclick="addToCart('Tomato',473, 'image/species 1.jpg')">
+                    <i class="fas fa-cart-plus"></i>
+                </button>
+            
+                <button class="btn like-btn" onclick="toggleLike(this)">
+                    <i class="fas fa-heart"></i> 
+                  </button>
+                  </div>
+
+        </div>
+        <div class="box organic-spices">
+            <img src="image/vegtable 10.jpg" alt="Organic Spices">
+            <h3>Brinjals</h3>
+        <h1>Limited time deal</h1>
+<h3><span class="highlight-price">₹473 </span>(₹135.14/100 g) M.R.P: ₹699 (32% off)</h3>
+<h1>Save 1% with coupon</h1>
+<h3>Get it by Today, 19 November</h3>
+<h1><span class="highlight-price">Fresh</span> FREE Delivery by Organic</h1>
+<div class="buttons">
+    <button class="btn add-to-cart" onclick="addToCart('Brinjals',473, 'image/vegtable 10.jpg')">
+        <i class="fas fa-cart-plus"></i>
+    </button>
+
+    <button class="btn like-btn" onclick="toggleLike(this)">
+        <i class="fas fa-heart"></i> 
+      </button>
+      </div>
+        </div>
+        <div class="box organic-spices">
+            <img src="image/bitter.jpg" alt="Organic Spices">
+            <h3>Bitter Gourd</h3>
+            <h1>1K+ bought in past month</h1>
+            <h3><span class="highlight-price"> ₹95 </span>(₹95/100 g)</h3>
+            <h1>Save ₹5 with coupon</h1>
+            <h3>on orders over ₹499</h3>
+            <h1><span class="highlight-price">Fresh</span> FREE delivery starting from Today 5 pm - 9 pm </h1>
+              
+            <div class="buttons">
+                <button class="btn add-to-cart" onclick="addToCart(' Bitter Gourd',95, 'image/bitter.jpg')">
+                    <i class="fas fa-cart-plus"></i>
+                </button>
+            
+                <button class="btn like-btn" onclick="toggleLike(this)">
+                    <i class="fas fa-heart"></i> 
+                  </button>
+                  </div>
+        </div>
+        <div class="box organic-spices">
+            <img src="image/cucumber.jpg" alt="Organic Spices">
+            <h3>Cucumber</h3>
+            <h1>100+ bought in past month</h1>
+            <h3><span class="highlight-price"> ₹288 </span> (₹144/100 g)</h3>
+            <h1>Save ₹5 with coupon</h1>
+           
+            
+            <h3>Get it by Thursday 21 November</h3>
+            
+            <h1><span class="highlight-price"> Fresh</span> FREE Delivery by Organic</h1>
+            <!-- <h3>on orders over ₹499</h3> -->
+            <div class="buttons">
+                <button class="btn add-to-cart" onclick="addToCart('Cucumber',288, 'image/cucumber.jpg')">
+                    <i class="fas fa-cart-plus"></i>
+                </button>
+            
+                <button class="btn like-btn" onclick="toggleLike(this)">
+                    <i class="fas fa-heart"></i> 
+                  </button>
+                </div>
+        </div>
+        <div class="box organic-spices">
+            <img src="image/pumpkin.jpg" alt="Organic Spices">
+            <h3>Pumpkin</h3>
+            
+            <!-- <h1>100+ bought in past month</h1> -->
+            <h1>Limited time deal</h1>
+            <h3><span class="highlight-price"> ₹330 </span> (₹94.29/100 g) </h3>
+            <h1>Save ₹5 with coupon</h1>
+            <h3>Get it by Thursday 21 November</h3>
+            
+            <h1><span class="highlight-price"> Fresh </span> FREE Delivery by Organic</h1>
+            <div class="buttons">
+                <button class="btn add-to-cart" onclick="addToCart('Pumpkin',330, 'image/pumpkin.jpg')">
+                    <i class="fas fa-cart-plus"></i>
+                </button>
+            
+                <button class="btn like-btn" onclick="toggleLike(this)">
+                    <i class="fas fa-heart"></i> 
+                  </button>
+                  </div>
+        </div>
+        <div class="box organic-spices">
+            <img src="image/gourd.jpg" alt="Organic Spices">
+            <h3>Bottle gourd</h3>
+<h1>100+ bought in past month</h1>
+
+<h3><span class="highlight-price"> ₹278 </span>(₹111.20/100 g) M.R.P: ₹475 (41% off)</h3>
+
+<h1>Save 5% more with Subscribe & Save</h1>
+<h3>FREE Delivery by Organic</h3>
+<h1>Get it by Friday 22 November</h1>
+
+<div class="buttons">
+    <button class="btn add-to-cart" onclick="addToCart('Bottle gourd ',278, 'image/gourd.jpg')">
+        <i class="fas fa-cart-plus"></i>
+    </button>
+
+    <button class="btn like-btn" onclick="toggleLike(this)">
+        <i class="fas fa-heart"></i> 
+      </button>
+      </div>
+        </div>
+        <div class="box organic-spices">
+            <img src="image/cauliflour.jpg" alt="Organic Spices">
+            <h3>Cauliflower</h3>
+        
+            <h1>1K+ bought in past month</h1>
+            <h3><span class="highlight-price"> ₹139 </span>(₹139/100 g) M.R.P: ₹300 (54% off)</h3>
+            <h1>Save 5% more with Subscribe & Save</h1>
+            <h3>on orders over ₹499</h3>
+           <h1><span class="highlight-price"> Fresh </span>FREE delivery starting from Tomorrow 7 am - 11 am on orders over ₹499</h1>
+          
+           <div class="buttons">
+            <button class="btn add-to-cart" onclick="addToCart('Cauliflower ',139, 'image/cauliflour.jpg')">
+                <i class="fas fa-cart-plus"></i>
+            </button>
+        
+            <button class="btn like-btn" onclick="toggleLike(this)">
+                <i class="fas fa-heart"></i> 
+              </button>
+              </div>
+        </div>
+        <div class="box organic-spices">
+            <img src="image/cabbes.jpg" alt="Organic Spices">
+            <h3>Cabbage</h3>
+        
+            <h1>100+ bought in past month</h1>
+            <h3><span class="highlight-price"> ₹275</span> (₹275/100 g) M.R.P: ₹300 (8% off)</h3>
+            <h1>Save 5% more with Subscribe & Save</h1>
+            <h3>on orders over ₹499</h3>
+            <h1><span class="highlight-price"> Fresh </span>FREE delivery starting from Tomorrow 7 am - 11 am on orders over ₹499</h1>
+            <div class="buttons">
+                <button class="btn add-to-cart" onclick="addToCart('Cabbage ',275, 'image/cabbes.jpg')">
+                    <i class="fas fa-cart-plus"></i>
+                </button>
+            
+                <button class="btn like-btn" onclick="toggleLike(this)">
+                    <i class="fas fa-heart"></i> 
+                  </button>
+                  </div>
+        </div>
+
+        <div class="box Dry-fruits">
+            <img src="image/pod 1.jpg" alt="Fresh Meat">
+            <h3>Cocoa beans pods</h3>
+            <h1>4K+ bought in past month</h1>
+            <h3><span class="highlight-price"> ₹258 </span> (₹129/100 g) M.R.P: ₹360 (28% off)</h3>
+            <h1>Get it by Friday 22 November</h1>
+            <h3>FREE Delivery by Organic</h3>
+            <div class="buttons">
+                <button class="btn add-to-cart" onclick="addToCart('Cocoa beans pods',258, 'image/pod 1.jpg')">
+                    <i class="fas fa-cart-plus"></i>
+                </button>
+            
+                <button class="btn like-btn" onclick="toggleLike(this)">
+                    <i class="fas fa-heart"></i> 
+                  </button>
+                  </div>
+        </div>
+        <div class="box Dry-fruits">
+            <img src="image/pod 2.jpg" alt="Fresh Meat">
+           <h3> Lady's fingers(Okra)</h3>
+            
+            <h1>K+ bought in past month</h1>
+            <h3><span class="highlight-price">₹351 </span>(₹175.50/100 g) M.R.P: ₹420 (16% off)</h3>
+            <h1>Save 5% more with Subscribe & Save</h1>
+           <h3>Get it by Thursday 21 November</h3>
+            <!-- <h1>FREE Delivery by Organic</h1> -->
+            <div class="buttons">
+                <button class="btn add-to-cart" onclick="addToCart(' Ladys fingers(Okra)',258, 'image/pod 2.jpg')">
+                    <i class="fas fa-cart-plus"></i>
+                </button>
+            
+                <button class="btn like-btn" onclick="toggleLike(this)">
+                    <i class="fas fa-heart"></i> 
+                  </button>
+                  </div>
+        </div>
+        <div class="box Dry-fruits">
+            <img src="image/pod 3.jpg" alt="Fresh Meat">
+            <h3>Drumsticks</h3>
+
+<h1>3K+ bought in past month</h1>
+<h3><span class="highlight-price">₹338 </span> (₹338/count) M.R.P: ₹435 (22% off)</h3>
+<h1>Save 5% more with Subscribe & Save</h1>
+<h3>Get it by Thursday 21 November</h3>
+<!-- <h1>FREE Delivery by Organic</h1> -->
+<div class="buttons">
+    <button class="btn add-to-cart" onclick="addToCart('Drumsticks',338, 'image/pod 3.jpg')">
+        <i class="fas fa-cart-plus"></i>
+    </button>
+
+    <button class="btn like-btn" onclick="toggleLike(this)">
+        <i class="fas fa-heart"></i> 
+      </button>
+      </div>
+        </div>
+        <div class="box Dry-fruits">
+            <img src="image/pod 4.jpg" alt="Fresh Meat">
+            <h3>Tamarinds</h3>
+          <h1>100+ bought in past month</h1>
+            <h3><span class="highlight-price">₹499 </span>(₹142.57/100 g) M.R.P: ₹550 (9% off)</h3>
+            <h1>Get it by Saturday 23 November</h1>
+            <h3>FREE Delivery by Organic</h3>
+            <div class="buttons">
+                <button class="btn add-to-cart" onclick="addToCart('Tamarinds',499 ,'image/pod 4.jpg')">
+                    <i class="fas fa-cart-plus"></i>
+                </button>
+            
+                <button class="btn like-btn" onclick="toggleLike(this)">
+                    <i class="fas fa-heart"></i> 
+                  </button>
+                  </div>
+        </div>
+        <div class="box Dry-fruits">
+            <img src="image/pod 5.jpg" alt="Fresh Meat">
+            <h3>Black-eyed pea pods</h3>
+
+<h1>4K+ bought in past month</h1>
+<h3><span class="highlight-price">₹261</span> (₹130.50/100 g) M.R.P: ₹365 (28% off)</h3>
+<h1>Save 5% more with Subscribe & Save</h1>
+<h3>Get it by Thursday 21 November</h3>
+<div class="buttons">
+    <button class="btn add-to-cart" onclick="addToCart(' Black-eyed pea pods',261,'image/pod 5.jpg')">
+        <i class="fas fa-cart-plus"></i>
+    </button>
+
+    <button class="btn like-btn" onclick="toggleLike(this)">
+        <i class="fas fa-heart"></i> 
+      </button>
+      </div>
+
+        </div>
+
+ <div class="box Dry-fruits">
+            <img src="image/pod 6.jpg" alt="Fresh Meat">
+            <h3> Sweet Pea Pods</h3>
+            
+        <h1>200+ bought in past month</h1>
+           <h3><span class="highlight-price">₹357 </span>(₹178.50/100 g) M.R.P: ₹420 (15% off)</h3>
+            <h1>Get it by Saturday 23 November</h1>
+             <h3>FREE Delivery by Organic</h3>
+            <div class="buttons">
+                <button class="btn add-to-cart" onclick="addToCart('Sweet Pea Pods ',357,'image/pod 6.jpg')">
+                    <i class="fas fa-cart-plus"></i>
+                </button>
+            
+                <button class="btn like-btn" onclick="toggleLike(this)">
+                    <i class="fas fa-heart"></i> 
+                  </button>
+                  </div>
+        </div>
+        <div class="box Dry-fruits">
+            <img src="image/pod 1.jpg" alt="Fresh Meat">
+            <h3>Cococoa bean pod</h3>
+            
+            
+            <h1>10K+ bought in past month</h1>
+            <h3><span class="highlight-price">₹442</span> (₹88.40/100 g) M.R.P: ₹625 (29% off)</h3>
+            <h1>Save 5% more with Subscribe & Save</h1>
+            <h3>Get it by Thursday 21 November</h3>
+           <h1>FREE Delivery by Organic</h1>
+           <div class="buttons">
+            <button class="btn add-to-cart" onclick="addToCart('Cococoa bean pod',442,'image/pod 1.jpg')">
+                <i class="fas fa-cart-plus"></i>
+            </button>
+        
+            <button class="btn like-btn" onclick="toggleLike(this)">
+                <i class="fas fa-heart"></i> 
+              </button>
+              </div>
+        </div>
+        <div class="box Dry-fruits">
+            <img src="image/pod 3.jpg" alt="Fresh Meat">
+           <h3>Drumsticks</h3>
+            
+    
+            <h1>900+ bought in past month</h1>
+            <h3><span class="highlight-price">₹1,261 </span>(₹126.10/100 g) M.R.P: ₹1,550 (19% off)</h3>
+            <h1>Save 5% more with Subscribe & Save</h1>
+            <h3> Get it by Thursday 21 November</h3>
+            <h1>FREE Delivery by Organic</h1>
+            <div class="buttons">
+                <button class="btn add-to-cart" onclick="addToCart('Drumsticks ',1261,'image/pod 3.jpg')">
+                    <i class="fas fa-cart-plus"></i>
+                </button>
+            
+                <button class="btn like-btn" onclick="toggleLike(this)">
+                    <i class="fas fa-heart"></i> 
+                  </button>
+                  </div>
+        </div>
+
+
+
+        <div class="box Dal">
+            <img src="image/cauliflour.jpg" alt="Dal">
+            <h3>Cauliflower</h3>
+<h1>1K+ bought in past month</h1>
+<h3><span class="highlight-price">₹247</span> (₹247/kg) M.R.P: ₹320 (23% off)</h3>
+<h1>Save 5% more with Subscribe & Save</h1>
+<h3>Get it by Thursday 21 November</h3>
+<h1>FREE Delivery by Organic</h1>
+<div class="buttons">
+    <button class="btn add-to-cart" onclick="addToCart(' Cauliflower ',247,'image/cauliflour.jpg')">
+        <i class="fas fa-cart-plus"></i>
+    </button>
+
+    <button class="btn like-btn" onclick="toggleLike(this)">
+        <i class="fas fa-heart"></i> 
+      </button>
+      </div>
+        </div>
+        <div class="box Dal">
+            <img src="image/cabbes.jpg" alt="Dal">
+           <h3>Cabbage</h3>
+            <h1>10K+ bought in past month</h1>
+            <h3><span class="highlight-price">₹63 </span> (₹126/kg)</h3>
+            <h1>Save 5% more with Subscribe & Save</h1>
+<h3>Get it by Thursday 21 November</h3>
+            <h1><span class="highlight-price">Fresh  </span> FREE delivery starting from Tomorrow 7 am - 11 am on orders over ₹499</h1>
+            <div class="buttons">
+                <button class="btn add-to-cart" onclick="addToCart('Cabbage',63,'image/cabbes.jpg')">
+                    <i class="fas fa-cart-plus"></i>
+                </button>
+            
+                <button class="btn like-btn" onclick="toggleLike(this)">
+                    <i class="fas fa-heart"></i> 
+                  </button>
+                  </div>
+        </div>
+        <div class="box Dal">
+            <img src="image/pumpkin.jpg" alt="Dal">
+            <h3>Pumpkin</h3>
+        
+           <h1>100+ bought in past month</h1>
+           
+            <h3><span class="highlight-price">₹120</span>  (₹240/kg) M.R.P: ₹127 (6% off)</h3>
+            <h1>Limited time deal</h1>
+           <h3>Get it by Sunday 24 November</h3>
+           <h1><span class="highlight-price">Fresh  </span> FREE delivery starting from Tomorrow 7 am - 11 am on orders over ₹499</h1>
+           <h1>Save 5% more with Subscribe & Save</h1>
+            <div class="buttons">
+                <button class="btn add-to-cart" onclick="addToCart(' Pumpkin ',120,'image/pumpkin.jpg')">
+                    <i class="fas fa-cart-plus"></i>
+                </button>
+            
+                <button class="btn like-btn" onclick="toggleLike(this)">
+                    <i class="fas fa-heart"></i> 
+                  </button>
+                  </div>
+        </div>
+        <div class="box Dal">
+            <img src="image/vegtables 4.jpg" alt="Dal">
+           <h3>Broccoli</h3>
+           <h1>100+ bought in past month</h1>
+           <h3>Get it by Tuesday 26 November</h3>
+           <h1><span class="highlight-price">₹365 </span> (₹243.33/kg) M.R.P: ₹375 (3% off)</h1>
+           <h3>Save 5% more with Subscribe & Save</h3>
+            <h1><span class="highlight-price">Fresh  </span> FREE delivery starting from Tomorrow 7 am - 11 am on orders over ₹499</h1>
+            <div class="buttons">
+                <button class="btn add-to-cart" onclick="addToCart('Broccoli ',365,'image/vegtables 4.jpg')">
+                    <i class="fas fa-cart-plus"></i>
+                </button>
+            
+                <button class="btn like-btn" onclick="toggleLike(this)">
+                    <i class="fas fa-heart"></i> 
+                  </button>
+                  </div>
+        </div>
+        <div class="box Dal">
+            <img src="image/flower.jpg" alt="Dal">
+            <h3>Artichokes</h3>
+            
+            <h1>300+ bought in past month</h1>
+           <h3> <span class="highlight-price">₹325  </span> (₹325/kg)</h3>
+           <h1> Get it by Saturday 23 November</h1>
+           <h3>Get it by Sunday 24 November</h3>
+           <h3>Only 1 left in stock.</h3>
+           <h1>FREE Delivery by Organic</h1> 
+           <div class="buttons">
+            <button class="btn add-to-cart" onclick="addToCart('Artichokes',325,'image/flower.jpg')">
+                <i class="fas fa-cart-plus"></i>
+            </button>
+        
+            <button class="btn like-btn" onclick="toggleLike(this)">
+                <i class="fas fa-heart"></i> 
+              </button>
+              </div>
+        </div>
+        <!-- <div class="box Dal">
+            <img src="image/dal 7.jpg" alt="Dal">
+            <h3>Organic Tattva, Organic Chana (Bengalgram) Dal 1 Kg </h3>
+            
+            <h1>400+ bought in past month</h1>
+            <h3><span class="highlight-price">₹193.50</span>  (₹193.50/kg) M.R.P: ₹215 (10% off)</h3>
+            <h1>Save 5% more with Subscribe & Save</h1>
+            <h3>Get it by Sunday 24 November</h3>
+            <h1>FREE Delivery by Organic</h1> 
+            <div class="buttons">
+                <button class="btn add-to-cart" onclick="addToCart('Chana Bengalgram Dall ',193.50,'image/dal 7.jpg')">
+                    <i class="fas fa-cart-plus"></i>
+                </button>
+            
+                <button class="btn like-btn" onclick="toggleLike(this)">
+                    <i class="fas fa-heart"></i> 
+                  </button>
+                  </div>
+        </div> -->
+        <!-- <div class="box Dal">
+            <img src="image/dal 8.jpg" alt="Dal">
+           <h3>Natureland Organics Cowpea Black Eye Lobia 500 G</h3>
+        
+            <h1><span class="highlight-price">₹386 </span>  (₹257.33/kg) M.R.P: ₹420 (8% off)</h1>
+           <h3>Buy 2 get 3% Buy 3 get 5% & Buy 4 get 8% </h3>
+           <h1>Save 5% more with Subscribe & Save</h1>
+           <h3>Get it by Tuesday 26 November</h3>
+           
+           
+            <h3>Only 1 left in stock.</h3>
+            <div class="buttons">
+                <button class="btn add-to-cart" onclick="addToCart('Cowpea Black Eye',386 ,'image/dal 8.jpg')">
+                    <i class="fas fa-cart-plus"></i>
+                </button>
+            
+                <button class="btn like-btn" onclick="toggleLike(this)">
+                    <i class="fas fa-heart"></i> 
+                  </button>
+                  </div>
+            
+        </div> -->
+        <!-- <div class="box Dal">
+            <img src="image/dal 3.jpg" alt="Dal">
+            <h3>Conscious Food Organic Yellow Moong Dal 1kg</h3>
+        
+            <h1>100+ bought in past month</h1>
+            
+            <h3><span class="highlight-price">₹249 </span> (₹249/kg) M.R.P: ₹285 (13% off)</h3>
+            <h1>Limited time deal</h1>
+            <h3>Save 5% more with Subscribe & Save</h3>
+            <h1>Get it by Friday 22 November</h1>
+            <h3>FREE Delivery by Organic</h3>
+            <div class="buttons">
+                <button class="btn add-to-cart" onclick="addToCart(' Yellow Moong Dal',249 ,'image/dal 3.jpg')">
+                    <i class="fas fa-cart-plus"></i>
+                </button>
+            
+                <button class="btn like-btn" onclick="toggleLike(this)">
+                    <i class="fas fa-heart"></i> 
+                  </button>
+                  </div>
+        </div> -->
+    </div>
+
+</section>
+<script>document.addEventListener("DOMContentLoaded", function() {
+    const filterBtns = document.querySelectorAll(".filter-btn");
+    const boxes = document.querySelectorAll(".box");
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener("click", function(e) {
+            e.preventDefault();
+
+            // Remove 'active' class from all buttons
+            filterBtns.forEach(button => button.classList.remove("active"));
+            // Add 'active' class to the clicked button
+            this.classList.add("active");
+
+            const filter = this.getAttribute("data-filter");
+
+            // Show all boxes if 'all' filter is clicked
+            if (filter === "all") {
+                boxes.forEach(box => {
+                    box.style.display = "block";
+                    box.style.opacity = 1;
+                });
+            } else {
+                boxes.forEach(box => {
+                    if (box.classList.contains(filter)) {
+                        box.style.display = "block";
+                        setTimeout(() => {
+                            box.style.opacity = 1;
+                        }, 100);
+                    } else {
+                        box.style.opacity = 0;
+                        setTimeout(() => {
+                            box.style.display = "none";
+                        }, 300); // Adjust delay to match the transition
+                    }
+                });
+            }
+        });
+    });
+});
+</script>
+<script>window.addEventListener('load', () => {
+    const boxes = document.querySelectorAll('.projects .box');
+    boxes.forEach(box => {
+        setTimeout(() => {
+            box.classList.add('show');
+        }, 200); 
+    });
+});
+
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const boxes = document.querySelectorAll('.box-container .box');
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            // Remove 'active' class from all buttons
+            filterBtns.forEach(button => button.classList.remove('active'));
+            // Add 'active' class to the clicked button
+            btn.classList.add('active');
+
+            // Get the filter type from the clicked button
+            const filter = btn.getAttribute('data-filter');
+
+            // Trigger animation for visible boxes
+            boxes.forEach(box => {
+                if (filter === 'all' || box.classList.contains(filter)) {
+                    box.style.display = 'block';
+                    box.classList.add('show');
+                } else {
+                    box.style.display = 'none';
+                    box.classList.remove('show');
+                }
+            });
+        });
+    });
+});
+</script>
+<script>// Function to toggle like state
+    function toggleLike(button) {
+      // Toggle the "liked" class on the button
+      button.classList.toggle('liked');
+    
+      // Optional: You can also toggle the icon color if you want
+      const icon = button.querySelector('.fas');
+      if (button.classList.contains('liked')) {
+        icon.style.color = '#fff'; // White icon for liked state
+      } else {
+        icon.style.color = '#fff'; // Yellow icon for unliked state
+      }
+    }
+    </script>
+  
+  
+<script>
+    // Store cart data in localStorage (for persistence across page reloads)
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    
+    // Function to update cart display
+    function updateCartDisplay() {
+        const cartCount = document.querySelector('.cart-count');
+        cartCount.textContent = cart.length;
+    }
+    
+   // Add to cart function
+function addToCart(name, price, image) {
+    // Add product to the cart array with the specified price
+    cart.push({ name, price, image });
+
+    // Save the cart to localStorage
+    localStorage.setItem('cart', JSON.stringify(cart));
+
+    // Update the cart count on the cart button
+    updateCartDisplay();
+
+    alert(`${name} has been added to your cart!`);
+    showNotification(`${name} has been added to your cart!`);
+    displayCart(); // Update the cart display
+}
+
+    
+    // Update cart display on page load
+    window.onload = updateCartDisplay;
+    </script>
+
+
+<div id="cart-notification" class="cart-notification" style="display: none;"></div>
+
+<section class="footer">
+
+    <div class="box-container">
+        
+        <div class="box1">
+            <h3>quick links</h3>
+            <a href="home.html"> <i class="fas fa-arrow-right"></i> home</a>
+            <a href="shop.html"> <i class="fas fa-arrow-right"></i> shop</a>
+            <a href="about.html"> <i class="fas fa-arrow-right"></i> about</a>
+            <a href="Organic-Products.html"> <i class="fas fa-arrow-right"></i> | Organic-Products </a>
+            <a href="review.html"> <i class="fas fa-arrow-right"></i> review</a>
+           <a href="contact.html"> <i class="fas fa-arrow-right"></i> contact</a>
+        </div>
+
+        <div class="box1">
+            <h3>extra links</h3>
+            <a href="cart.html"> <i class="fas fa-arrow-right"></i> my order </a>
+            <a href="cart.html"> <i class="fas fa-arrow-right"></i> my favorite </a>
+            <a href="cart.html"> <i class="fas fa-arrow-right"></i> my wishlist </a>
+            <a href="#login-btn"> <i class="fas fa-arrow-right"></i> my account </a>
+            <a href="#login-btn"> <i class="fas fa-arrow-right"></i> terms or use </a>
+        </div>
+        <div class="box1">
+            <h3>follow us</h3>
+            <a href="https://www.facebook.com/advoize19"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="https://www.facebook.com/advoize19"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="https://www.youtube.com/channel/UCKfJKfAaNX9cN5qqk_L2uDw"> <i class="fab fa-youtube"></i> youtube </a>
+            <a href="https://www.instagram.com/advoize19/"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="https://www.facebook.com/advoize19"> <i class="fab fa-linkedin"></i> linkedin </a>
+            <a href="https://www.facebook.com/advoize19"> <i class="fab fa-pinterest"></i> pinterest </a>
+        </div>
+
+       
+        
+    </div>
+
+</section>
+
+
+<div class="copyright">     
+    <p>Copyright © 2024 Organic-Products. All rights reserved <i class="fa fa-heart" aria-hidden="true"></i> Designed by Advoize. 
+    </p>
+</div>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
